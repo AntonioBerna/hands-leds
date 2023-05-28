@@ -33,6 +33,7 @@ or
 ```
 pip install -r requirements.txt
 ```
+>**NOTE:** Check if ```port``` attribute of ```MicroController``` class is correct in your case!
 
 Perfect! Now that everything is ready you need to build the electrical circuit with the 5 led diodes. Here is what the schematic looks like:
 
