@@ -17,7 +17,7 @@ class MicroController:
         board = pyfirmata.Arduino(port)
         self.leds = []
         for i in range(0, self.hands):
-            self.leds.append(board.get_pin(f"d:{i + 8}:o"))
+            self.leds.append(board.get_pin(f"d:{i + self.start_pin}:o"))
 
     def write_text(self, frame, finger_count):
         cv2.putText(frame, f"Finger count: {finger_count}",
