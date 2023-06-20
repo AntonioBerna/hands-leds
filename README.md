@@ -33,20 +33,41 @@ or
 ```
 pip install -r requirements.txt
 ```
->**NOTE:** Check if ```port``` attribute of ```MicroController``` class is correct in your case!
 
 Perfect! Now that everything is ready you need to build the electrical circuit with the 5 led diodes. Here is what the schematic looks like:
 
-![](imgs/project.png)
+<p align="center">
+    <img src="imgs/project.png">
+</p>
 
 Finally, we can send the project into execution with the following command:
 
 ```
-python main.py
+python src/main.py
 ```
 
-So as to obtain the following outputs:
+>**NOTE:** Remember to check if your Arduino is connected to a USB port!
 
-![](imgs/fingers.png)
+Don't worry if you forgot to connect your Arduino, my program will notify you with the following message:
 
-![](imgs/leds.png)
+```
+No Arduino port found.
+```
+
+If all goes well after running ```python src/main.py``` you should see the following window:
+
+<p align="center">
+    <img src="imgs/gui.png">
+</p>
+
+Now all you need to do is select the port on which Arduino is connected (from the drop-down menu provided) and click on the **Open Camera** button to display the following outputs:
+
+<p align="center">
+    <img src="imgs/fingers.png" width="700">
+</p>
+
+<p align="center">
+    <img src="imgs/leds.png" width="400">
+</p>
+
+>**NOTE:** This project is fully compatible with macOS and I am working on compatibility with Linux :hammer:
